@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/calorie-tracker-square.png
 title: "Thomas Calorie Tracker"
-date: 2025-01-21
+date: 2025-01-2
 published: true
 labels:
   - JavaScript
