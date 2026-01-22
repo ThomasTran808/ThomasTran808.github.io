@@ -20,3 +20,5 @@ Thomas Calorie Tracker is a clean and intuitive web application I developed to h
 Users can quickly add meals with their calorie counts, view a complete log of entries with timestamps, and adjust their daily calorie goal. The application uses local storage to save data throughout the day and automatically resets at midnight.
 
 Built with vanilla JavaScript, HTML, and CSS.
+
+Source: <a href="https://github.com/ThomasTran808/calorie-tracker"><i class="large github icon"></i>ThomasTran808/calorie-tracker</a>
