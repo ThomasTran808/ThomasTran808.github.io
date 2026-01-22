@@ -21,4 +21,6 @@ Users can quickly add meals with their calorie counts, view a complete log of en
 
 Built with vanilla JavaScript, HTML, and CSS.
 
+Live Demo: <a href="https://thomastran808.github.io/calorie-tracker/"><i class="large globe icon"></i>thomastran808.github.io/calorie-tracker</a>
+
 Source: <a href="https://github.com/ThomasTran808/calorie-tracker"><i class="large github icon"></i>ThomasTran808/calorie-tracker</a>
