@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/imagebot-square.png
 title: "Image Detection Automation Bot"
-date: 2025-01-19
+date: 2024-08-19
 published: true
 labels:
   - AutoHotkey
