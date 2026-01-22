@@ -1,13 +1,13 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Thomas Tran",
     "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "picture": "https://github.com/ThomasTran808.png",
+    "email": "tranthom@hawaii.edu",
+    "phone": "808-729-8495",
+    "website": "https://ThomasTran808.github.io",
+    "summary": "I am a Computer Science student at the University of Hawaii, expected to graduate in 2027. I am passionate about software development, artificial intelligence, and building applications that solve real-world problems. I am currently seeking internship opportunities to gain hands-on experience.",
+    "location": { "address": "", "postalCode": "96814", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
       { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
@@ -16,28 +16,28 @@
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Data Science" },
+    { "name": "Cyber Security" },
+    { "name": "Creating Projects" },
+    { "name": "Problem Solving" },
+    { "name": "Compute Science" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "C", "Python", "Java", "Javascript",  ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "MacOS", , "Git/GitHub", ,  ]
     }
   ],
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "area": "Computer Science (expected Spring, 2028)",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "startDate": "2024-09-01",
       "endDate": "Present",
       "courses": [
       ]
