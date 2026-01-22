@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/calorie-tracker-square.png
+image: <img width="991" height="679" alt="Screenshot 2026-01-21 175924" src="https://github.com/user-attachments/assets/d42fd764-5785-42c1-b61d-999bb3cad365" />
 title: "Thomas Calorie Tracker"
 date: 2025-01-21
 published: true
@@ -13,7 +13,8 @@ labels:
 summary: "A web-based calorie tracking application that helps users monitor their daily food intake and stay within their calorie goals."
 ---
 
-<img class="img-fluid" src="../img/calorie-tracker-header.png">
+<img class="<img width="300" height="300" alt="Screenshot2026-01-21175924" src="https://github.com/user-attachments/assets/fec7feba-7a28-4391-83b2-8fb8a2763a57" />
+">
 
 Thomas Calorie Tracker is a clean and intuitive web application I developed to help users track their daily calorie intake. The application features a modern, responsive design that works seamlessly across desktop and mobile devices.
 
