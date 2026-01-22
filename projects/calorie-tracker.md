@@ -19,7 +19,7 @@ This project is a web-based calorie tracking application that helps users monito
 
 I was solely responsible for the entire development of this project. I designed and implemented the user interface using HTML and CSS, developed all functionality using vanilla JavaScript, and created the data persistence system using local storage. The application automatically resets at midnight while preserving user preferences.
 
-Through this project, I learned how to manage application state in JavaScript and implement local storage for data persistence. I gained experience with DOM manipulation, event handling, and creating responsive designs that work across different devices. This project also taught me the importance of user experience design and providing clear visual feedback.
+Through this project, I learned how to manage application state in JavaScript and implement local storage for data persistence.  This project also taught me the importance of user experience design and providing clear visual feedback.
 
 Live Demo: <a href="https://thomastran808.github.io/calorie-tracker/"><i class="large globe icon"></i>thomastran808.github.io/calorie-tracker</a>
 
