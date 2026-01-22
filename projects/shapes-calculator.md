@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/shapes-square.png
 title: "Geometric Shape Calculator"
-date: 2025-01-20
+date: 2024-12-11
 published: true
 labels:
   - C++
