@@ -7,29 +7,59 @@
     "phone": "808-729-8495",
     "website": "https://ThomasTran808.github.io",
     "summary": "I am a Computer Science student at the University of Hawaii, expected to graduate in 2027. I am passionate about software development, artificial intelligence, and building applications that solve real-world problems. I am currently seeking internship opportunities to gain hands-on experience.",
-    "location": { "address": "", "postalCode": "96814", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "location": {
+      "address": "",
+      "postalCode": "96814",
+      "city": "Honolulu",
+      "countryCode": "USA",
+      "region": "Hawaii"
+    },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      {
+        "network": "github",
+        "username": "ThomasTran808",
+        "url": "http://github.com/ThomasTran808"
+      },
+      {
+        "network": "linkedin",
+        "username": "ThomasTran808",
+        "url": "http://linkedin.com/in/ThomasTran808"
+      }
     ]
   },
   "interests": [
-    { "name": "Data Science" },
-    { "name": "Cyber Security" },
-    { "name": "Creating Projects" },
-    { "name": "Problem Solving" },
-    { "name": "Compute Science" }
+    {
+      "name": "Data Science"
+    },
+    {
+      "name": "Cyber Security"
+    },
+    {
+      "name": "Creating Projects"
+    },
+    {
+      "name": "Problem Solving"
+    },
+    {
+      "name": "Computer Science"
+    }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "Python", "Java", "Javascript",  ]
+      "keywords": [
+        "C",
+        "Python",
+        "Java",
+        "Javascript"
+      ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", , "Git/GitHub", ,  ]
+      "keywords": [
+        "MacOS",
+        "Git/GitHub"
+      ]
     }
   ],
   "education": [
@@ -39,8 +69,7 @@
       "studyType": "B.S.",
       "startDate": "2024-09-01",
       "endDate": "Present",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "work": [
