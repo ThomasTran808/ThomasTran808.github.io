@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/calorie-tracker-square.png
 title: "Thomas Calorie Tracker"
-date: 2025-01-2
+date: 2025-01-21
 published: true
 labels:
   - JavaScript
@@ -15,11 +15,11 @@ summary: "A web-based calorie tracking application that helps users monitor thei
 
 <img class="img-fluid" src="https://github.com/user-attachments/assets/761805a6-0bea-43a1-8766-1d14202c46a7">
 
-Thomas Calorie Tracker is a clean and intuitive web application I developed to help users track their daily calorie intake. The application features a modern, responsive design with real-time calculation of calories consumed versus daily goals.
+This project is a web-based calorie tracking application that helps users monitor their daily food intake. The application allows users to add meals with calorie counts, view their progress toward daily goals, and track their consumption history throughout the day. It features a clean interface with real-time calculations and visual feedback through a progress bar.
 
-Users can quickly add meals with their calorie counts, view a complete log of entries with timestamps, and adjust their daily calorie goal. The application uses local storage to save data throughout the day and automatically resets at midnight.
+I was solely responsible for the entire development of this project. I designed and implemented the user interface using HTML and CSS, developed all functionality using vanilla JavaScript, and created the data persistence system using local storage. The application automatically resets at midnight while preserving user preferences.
 
-Built with vanilla JavaScript, HTML, and CSS.
+Through this project, I learned how to manage application state in JavaScript and implement local storage for data persistence. I gained experience with DOM manipulation, event handling, and creating responsive designs that work across different devices. This project also taught me the importance of user experience design and providing clear visual feedback.
 
 Live Demo: <a href="https://thomastran808.github.io/calorie-tracker/"><i class="large globe icon"></i>thomastran808.github.io/calorie-tracker</a>
 
