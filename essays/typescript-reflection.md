@@ -22,3 +22,6 @@ The practice WODs turned out to be exactly what works for my learning style. I h
 ## This Style Works For Me
 
 This style of learning fits how my brain works. I need to focus intensely on one thing rather than juggle multiple tasks. WODs give me that structure. The practice sessions let me fail without consequences. The timed aspect keeps me from overthinking. The immediate feedback shows me what I need to improve. The combination of TypeScript and athletic software engineering makes sense. TypeScript gives you guardrails. WODs train you to work within constraints. Both push you to be more deliberate about your code. I'm still early in the process but so far this matches how I learn better than most courses I've taken.
+
+
+I used Claude for grammer corections
