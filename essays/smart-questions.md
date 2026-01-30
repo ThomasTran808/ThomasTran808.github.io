@@ -9,6 +9,7 @@ labels:
   - Communication
   - Software Engineering
 ---
+<img class="img-fluid" src="../img/smart-questions-header.png">
 
 ## Why Smart Questions Matter
 
