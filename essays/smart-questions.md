@@ -1,99 +1,45 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
-# All dates must be YYYY-MM-DD format!
-date: 2015-09-08
-published: false
+title: "Smart Questions Get Smart Answers"
+date: 2025-01-22
+published: true
 labels:
-  - Questions
-  - Answers
   - StackOverflow
+  - Communication
+  - Software Engineering
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+## Why Smart Questions Matter
 
-## Is there such thing as a stupid question?
+Asking questions the smart way matters more than most software engineers realize. The difference between a well-asked question and a poorly-asked one determines whether you get useful help or waste everyone's time including your own. Eric Raymond's guidelines for asking questions aren't arbitrary rules. They reflect how technical communities actually function and what separates productive interactions from frustrating ones.
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+Smart questions save time for both the person asking and the people answering. When you provide context explain what you've tried and show your actual code respondents can jump straight to solving your problem instead of playing twenty questions to figure out what you're even asking about. Bad questions force people to guess what you mean extract basic information through comments and often result in no useful answers at all because nobody wants to invest effort in helping someone who won't invest effort in asking properly.
 
-## What’s a smart question?
+## A Smart Question Example
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
+The StackOverflow question ["Why is processing a sorted array faster than processing an unsorted array?"](https://stackoverflow.com/questions/11227809/) demonstrates what smart questions look like. The asker provided complete runnable code showing the performance difference they observed. They included timing measurements from both sorted and unsorted cases. They explained their initial hypothesis about why this might happen and why that hypothesis didn't make sense to them. The question showed genuine curiosity about an unexpected behavior rather than just asking someone to fix their code.
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
+The question got detailed high-quality answers because it was asked well. The top answer explained branch prediction in CPUs with clear analogies and technical detail. Multiple experts contributed different perspectives on the same phenomenon. The question accumulated thousands of upvotes and became a reference for understanding CPU architecture and performance optimization. This happened because the asker made it easy for knowledgeable people to provide valuable answers.
 
-```
-Q: python date of the previous month
+## A Not Smart Question Example
 
-I am trying to get the date of the previous month with python. Here is what i've tried:
+Here's an example of a not smart question: "My code doesn't work. Help???" followed by a screenshot of an error message with no code no explanation of what they were trying to do and no indication of what they'd already tried. This violates multiple principles from Raymond's guidelines. There's no specific problem statement. There's no code to reproduce the issue. There's no evidence of any effort to solve the problem independently.
 
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
+Responses to questions like this tend to be unhelpful or nonexistent. People might ask for more information which the original poster often doesn't provide. Someone might point out that screenshots of code are useless because nobody can copy and test them. Eventually the question gets downvoted closed or just ignored entirely. The asker doesn't get their problem solved. The community wastes time on a question that should never have been posted in its current form.
 
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
+## What Makes Questions Smart or Not Smart
 
-I have solved this trouble in bash with:
+Smart questions demonstrate effort. The sorted array question showed the asker had written code to measure performance and had thought through why the results didn't match their expectations. Not smart questions expect others to do basic work the asker should have done themselves. Posting "how do I sort an array in Python" without checking documentation first shows you haven't tried to solve your own problem.
 
-echo $(date -d"3 month ago" "+%G%m%d")
+Smart questions are specific. They identify exactly what isn't working or what behavior seems wrong. Not smart questions are vague like "my program has bugs" without specifying which part or what the bugs actually do. Specificity lets people provide targeted answers instead of having to guess what you mean.
 
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
+Smart questions include context and show your work. The sorted array question included complete code test cases and measurements. Not smart questions dump code with no explanation of what it's supposed to do or what's going wrong. Including what you've already tried prevents people from suggesting things you've already attempted.
 
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
+## What I Learned
 
-Thanks for your help!
-```
+Going through these examples reinforced how much difference question quality makes. Before reading Raymond's guidelines I probably would have thought the sorted array question was unnecessarily detailed. Now I understand why that detail made it possible for experts to provide such thorough explanations. The question anticipated what information answerers would need and provided it upfront.
 
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
+I also learned that asking smart questions isn't just about following rules. It's about respecting other people's time and demonstrating you've put in effort yourself. Technical communities respond well to people who show they're trying to learn and solve problems independently. They respond poorly to people who treat them as free debugging services.
 
-```
-A: datetime and the datetime.timedelta classes are your friend.
-
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
-
-Like this:
-
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
-```
- 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
-
-## The foolproof way to get ignored.
-
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
-
-```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
-```
-
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
-
-## Conclusion
-
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+This matters for my career because communication skills determine how effective you are as a software engineer. Knowing how to ask for help when you're stuck without wasting people's time makes you someone others want to work with. Understanding what information to include when reporting bugs or requesting features makes you more valuable on any team. Smart questions aren't just about getting answers faster. They're about being the kind of engineer other engineers respect.
