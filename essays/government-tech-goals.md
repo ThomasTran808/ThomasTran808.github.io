@@ -28,3 +28,6 @@ Creating new things drives me more than maintaining existing systems but governm
 ## The Concrete Goal
 
 The goal isn't abstract. I want technical skills that let me build secure efficient systems for Hawaii's government agencies. That means understanding data structures well enough to make informed architectural decisions and knowing enough about cybersecurity to anticipate how systems might fail under attack. Finding opportunities to work on real government projects would give me exposure to the standards and constraints that shape public sector development. That's the experience I need to move from writing code that works on my laptop to building systems that serve the state.
+
+
+*I used Claude AI for grammar corrections.*
