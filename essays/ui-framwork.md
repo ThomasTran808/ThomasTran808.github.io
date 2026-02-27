@@ -11,22 +11,24 @@ labels:
   - Software Engineering
 ---
 
-<img class="img-fluid" src="../img/ui-frameworks-header.png">
+<img class="img-fluid" src="../img/five-navbars-screenshot.png">
 
 ## The Learning Curve Is Real
 
-Learning Bootstrap 5 felt like learning a new language. Not in the fun way where vocabulary clicks quickly, but in the frustrating way where you spend an hour figuring out why your navbar won't collapse on mobile. Coming in, I assumed HTML and CSS were enough. I'd built pages before. How complicated could a framework be? Pretty complicated, it turns out.
+Learning Bootstrap 5 felt like learning a new language. Not in the fun way where things click quickly, but in the frustrating way where you spend an hour figuring out why your navbar won't align properly. Coming in, I assumed HTML and CSS were enough. I'd built pages before. How hard could a framework be? Two WODs answered that question fast.
 
-## What Raw HTML and CSS Can't Do Efficiently
+## BrowserHistory with Bootstrap 5
 
-Raw HTML and CSS give you full control, which sounds appealing until you try to build something that looks good across different screen sizes. Getting layouts to behave consistently on desktop, tablet, and mobile requires writing a lot of CSS. Media queries, flexbox rules, percentage-based widths, all of it adds up fast. You're solving problems that thousands of developers have already solved, just slower and with more debugging.
+The first assignment was converting an existing BrowserHistory HTML page into a Bootstrap 5 layout. That meant adding a dark fixed navbar, wrapping content in Bootstrap containers, floating images, and splitting the browser sections into a three-column grid. On paper it sounds simple. In practice, getting the navbar links to anchor correctly, understanding how `fixed-top` interacts with page content, and using `col` classes to create even columns required reading a lot of documentation. Once it clicked though, the grid handled the responsive layout automatically without writing a single media query.
 
-Bootstrap 5 solves this out of the box. The grid system handles responsive layouts automatically. The component library gives you buttons, navbars, and cards that already look professional. For the recreation project in ICS 314, pages that took professional teams real time to design could be approximated quickly using the right Bootstrap classes. That's the point. You're leveraging work that's already been done.
+## Five Navbars
 
-## The Software Engineering Argument
+The harder WOD was building five different navbars from scratch, each recreating a real Hawaii restaurant or bar. Boardroom Kailua, Morning Brew, Buzz's, Aloha Beer, and Duke's Waikiki all have completely different branding. Dark teal backgrounds, centered logos, icon-only nav items, orange accent links, each one required different Bootstrap utility combinations. Getting logos centered while pushing other items to opposite ends meant understanding `d-flex`, `justify-content-between`, and `ms-auto` in ways that didn't come naturally at first. Alignment kept breaking. Images weren't showing up until I got the file paths right.
 
-Frameworks aren't just convenient, they make engineering sense. Avoiding duplication is a core principle in software development. If Bootstrap already solves responsive design, there's no reason to solve it again. Frameworks also make codebases readable to other developers who already know them, which matters in any collaborative environment.
+## What Bootstrap Actually Does for You
 
-The frustration I felt early on wasn't wasted time. It was the cost of learning a tool that makes everything after it faster.
+Both WODs showed the same thing. Bootstrap handles the hard responsive behavior through utility classes, but you still have to understand what those classes do. Raw CSS would have taken longer, but Bootstrap isn't automatic either. The framework meets you halfway. You still have to know what you're building.
+
+The frustration was real but so was the result.
 
 *I used Claude AI for grammar corrections and structure refinement.*
