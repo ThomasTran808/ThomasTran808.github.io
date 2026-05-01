@@ -11,7 +11,7 @@ labels:
   - React
 ---
 
-<img class="img-fluid" src="../img/design-patterns-header.png">
+
 
 ## Nobody Starts From Zero
 
