@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/bowlletins-mockup.png
+image: img/bowlletins-square.png
 title: "Bowlletins"
 date: 2026-05-01
 published: true
