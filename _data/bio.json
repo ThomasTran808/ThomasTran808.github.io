@@ -40,24 +40,42 @@
   ],
   "skills": [
     {
-      "name": "Languages and Frameworks",
+      "name": "Languages",
       "keywords": [
         "C",
         "C++",
         "Python",
         "Java",
         "JavaScript",
+        "TypeScript",
         "HTML/CSS"
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "Frameworks and Libraries",
       "keywords": [
-        "MacOS",
-        "Windows",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Bootstrap 5",
+        "Prisma"
+      ]
+    },
+    {
+      "name": "Databases and Tools",
+      "keywords": [
+        "PostgreSQL",
         "Git/GitHub",
         "VS Code",
+        "ESLint",
         "AutoHotkey"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "keywords": [
+        "MacOS",
+        "Windows"
       ]
     }
   ],
