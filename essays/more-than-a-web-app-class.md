@@ -8,7 +8,7 @@ labels:
   - Software Engineering
   - Reflection
   - Agile Project Management
-  - Design Patterns
+  - Coding Standards
   - ICS 314
 ---
 
@@ -18,34 +18,34 @@ labels:
 
 ## I. Introduction
 
-By the end of ICS 314, you have built a full-stack web application with a real team, hit real deadlines, and shipped something that works. It is easy to walk away thinking the class was about Next.js, React, and Prisma. Those were the tools. The actual subject was software engineering, and the distinction matters. The concepts we worked with  how you manage a project, how you structure code so it does not fall apart, how you make decisions as a team  apply to any software context, not just web apps. I want to focus on two of them: Agile Project Management and Design Patterns.
+By the end of ICS 314, you have written TypeScript, built UI components in React, deployed a full-stack Next.js app with a real database, and shipped a team project that actually works. It is easy to walk away thinking the class taught you a web stack. It did. But the more durable thing it taught was how to work on software at a level beyond just getting code to run. Two concepts from this class that I think matter far outside the context of web development are coding standards and Issue Driven Project Management.
 
-## II. Agile Project Management
+## II. Coding Standards
 
-Project management is the problem of coordinating people and work toward a shared goal. It sounds simple until you have five people, conflicting schedules, unclear requirements, and a deadline that does not move. There are a lot of ways to approach that problem and they are not all equivalent.
+A coding standard is a set of agreed-upon rules for how code should be written across a codebase. Not what the code does, but how it looks, how it is organized, and what patterns it follows. In ICS 314, that meant ESLint enforcing rules like no unused variables, consistent spacing, and specific TypeScript conventions. An ESLint error was not a warning you could ignore. It blocked you.
 
-Agile Project Management is a family of approaches that share a core idea: break the work into short cycles, ship something at the end of each one, and adjust based on what you learned. The alternative is planning everything upfront, executing the full plan, and delivering at the end. That works when requirements are fixed and well understood. In software, they rarely are.
+That felt annoying at first, especially when ESLint flagged something that still ran fine. But the point is not whether your code works in isolation. The point is whether another person can read it, maintain it, and build on it without constantly asking you what you meant. A codebase is a shared document. The standard is what keeps it readable as it grows and as different people touch different parts.
 
-The specific flavor we used in ICS 314 is called Issue Driven Project Management. The idea is that all work lives as discrete issues in a tracker, in our case GitHub Projects. Each issue describes a specific, scoped task. You assign it to one person, put it on a board, and move it from backlog to in progress to done. Milestones group related issues into time-boxed delivery targets. When a milestone is up, you look at what got done, what did not, and what needs to shift going into the next one.
+This applies to any software project, not just web apps. A Python data pipeline, a C embedded system, a shell scripting environment — all of them benefit from consistent style because all of them are eventually read by someone other than the original author. The specific rules change by language and team. The reason for having them does not.
 
-On Bow-lletins, this actually changed how the team worked. Instead of someone saying "I'll handle the front end," we broke front end into specific issues: implement the bulletin card component, set up the filter by category, wire the create form to the API. Those tasks could be picked up by anyone and tracked independently. When something slipped, we could see it early instead of finding out at the end of the milestone that a whole feature was missing.
+What I took from ESLint specifically was learning to treat style errors as real errors. The instinct when something works is to ship it. But works on my machine in this moment is a low bar. Readable, consistent, and maintainable is a higher bar, and the discipline of hitting it on every file is something I will carry into any engineering environment.
 
-None of this is web specific. Issue Driven Project Management would work for a firmware team, a data pipeline project, or a research group writing a codebase for simulation. The core structure of small tasks, clear ownership, and regular delivery is general. The tool might change. The practice is the same. I could see using this on any group project involving software, regardless of what that software does.
+## III. Issue Driven Project Management
 
-## III. Design Patterns
+Project management is the problem of getting people and work aligned toward a shared goal on a fixed timeline. In ICS 314, we used a specific approach called Issue Driven Project Management, which is built on top of Agile principles.
 
-A design pattern is a named solution to a recurring problem in software structure. The key word is recurring. If a problem shows up once in one codebase, you solve it however makes sense. If the same structural problem shows up in codebases across different domains, languages, and teams, it is worth naming the solution so people can communicate about it and reach for it without reinventing it every time.
+Agile is a broad philosophy that prioritizes short delivery cycles, continuous feedback, and flexibility over rigid long-term planning. The idea is that requirements change, and a process that treats the plan as fixed will produce something that no longer fits by the time it ships. Agile breaks work into shorter iterations and adjusts after each one.
 
-The patterns I worked with most in ICS 314 were not always labeled as such in the moment, but they were there. The one that came up constantly on the final project was the Observer pattern, specifically how React's component model handles state. When state changes, everything that depends on it re-renders. The component does not call its children and tell them to update. The children are subscribed to the state and they respond when it changes. That is the Observer pattern: a subject, a set of observers, and a mechanism for notification.
+Issue Driven Project Management takes that philosophy and makes it concrete. Every piece of work lives as a discrete issue in a tracker. Each issue is scoped to one person, has a clear definition of done, and moves through a board from backlog to in progress to done. Milestones group issues into time-boxed targets so the team can see what is due and when.
 
-Another pattern that shaped how we structured the project was the Model View Controller split. The Prisma schema defined the data model. The Next.js server components and API routes handled the logic. The React components handled what the user sees. Keeping those concerns separated made it easier to change one without breaking the others. When we needed to add a field to the database, we changed the schema and the API. The front end component just had to display whatever it received. That separation is not Next.js specific. It shows up in desktop applications, mobile apps, and game engines. The language and the tools change. The pattern persists.
+On Bow-lletins, this made a real difference. Early on we talked about the project in broad terms: someone would handle the profile page, someone would handle posting. As soon as we moved to actual issues, the work became trackable. "Implement bulletin card component" is a task. "Handle the front end" is not. When something was falling behind, we could see it on the board before the deadline instead of discovering it the night before the milestone was due.
 
-Understanding these as patterns rather than just "how React works" is the useful thing. When I encounter a new system in a different context, I can ask what pattern it is using. That question gives me a starting point instead of approaching it cold. Patterns are a shared vocabulary for structure. The web application was just the context where I learned to see them.
+The part worth emphasizing is that none of this is specific to web applications. A research lab building a data processing pipeline could run on the same board structure. A small team writing firmware for an embedded device could use the same milestone system. The tool might be GitHub Projects or Jira or a physical board. The underlying structure of small tasks with clear owners and regular check-ins transfers to any team doing any kind of complex work together.
 
-## IV. Why This Matters
+## IV. Why the Distinction Matters
 
-These concepts are not specific to web development. They are tools for thinking about software: how to manage it, how to structure it, how to build it with other people. The web stack was the environment where I worked with them, but they transfer.
+Both of these concepts are about discipline. Coding standards are the discipline of writing for someone else, not just for the compiler. Issue Driven Project Management is the discipline of making work visible and accountable instead of assuming everyone knows what is happening.
 
-That transfer is actually the thing worth being deliberate about. It is possible to finish a course like ICS 314 and walk away thinking you learned how to build web apps. You did. But the more durable thing is the mental models underneath — what makes a project manageable, what makes code adaptable. Those apply anywhere you are building software with other people, and that is almost everywhere you will end up.
+These are not web skills. They are engineering skills. The web stack is what ICS 314 used to teach them, and I am glad I learned Next.js and Prisma and React. But the things I expect to still be using in ten years regardless of what stack I am working in are the habits around how I write code and how I manage work with a team. That is what the class was actually about.
 
 *I used Claude AI for grammar review of this essay.*
