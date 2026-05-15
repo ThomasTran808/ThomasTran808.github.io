@@ -4,7 +4,7 @@ type: project
 image: img/vacay/vacay-square.png
 title: "Vacay"
 date: 2015
-published: false
+draft: true
 labels:
   - Javascript
   - Meteor

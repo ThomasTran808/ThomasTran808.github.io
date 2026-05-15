@@ -46,4 +46,4 @@ I also learned that asking smart questions isn't just about following rules. It'
 This matters for my career because communication skills determine how effective you are as a software engineer. Knowing how to ask for help when you're stuck without wasting people's time makes you someone others want to work with. Understanding what information to include when reporting bugs or requesting features makes you more valuable on any team. Smart questions aren't just about getting answers faster. They're about being the kind of engineer other engineers respect.
 
 
-used claude for grammer check
+*I used Claude AI for grammar review of this essay.*
