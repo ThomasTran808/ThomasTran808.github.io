@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "TypeScript Fits How I Actually Learn"
 date: 2025-01-22
-published: true
+draft: true
 labels:
   - TypeScript
   - Software Engineering

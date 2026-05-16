@@ -3,6 +3,7 @@ layout: essay
 type: essay
 title: "Where's the Truck? A Crowdsourced Food Truck Tracker for Oahu"
 date: 2026-04-01
+draft: true
 labels:
   - Software Engineering
   - Nextjs
